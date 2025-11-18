@@ -49,6 +49,23 @@ body{
     color: #102542;
 }
 
+.arrow-color{
+    color: #377292;
+}
+
+.form{
+  border: none; /* Remove a borda padrão do Bootstrap */
+  border-radius: 0; /* Remove as bordas arredondadas */
+  border-bottom: 2px solid #ced4da; /* Adiciona apenas a linha inferior */
+  padding-left: 0; /* Remove o padding padrão para alinhar à esquerda */
+}
+
+/* Remove o brilho azul (box-shadow) ao focar no input */
+.form-control:focus {
+  box-shadow: none;
+  border-color: #495057; /* Muda a cor da linha inferior ao focar */
+}
+
 .text-welcome{
     color: #1b3558;
 }
@@ -87,6 +104,10 @@ body{
 .biblioteca-scroll{
     height: var(--altura-painel-scroll);
     overflow-y: auto;
+}
+
+.atividade-card{ 
+    cursor: pointer;
 }
 
 .dia-card{
@@ -163,10 +184,77 @@ body{
 }
 
 .login-card-custom{
-    border-radius: 80px 80px 100px 100px;
+    border-radius: 100px 100px 100px 100px;
     overflow: hidden;
     max-width: 500px;
     width: 100%;
     height: 600px;
-    margin-top: 100px;
 }
+
+.login-image-container{
+    position: relative;
+
+    z-index: 1;
+}
+
+.drag-over-active{
+    transform: sclae(1.1);
+    box-shadow: 0 0 15px rgba(0,123,255,0.7);
+    opacity: 1 !important;
+    transition: all 0.2s ease-in-out;
+}
+
+.login-image-container::before{
+    content: "";
+
+    position: absolute;
+    top: 10px;
+    left: 60px;
+    width: 70%;
+    height: 100%;
+
+    background-image: url(./img/logo-avena-removebg-preview.png);
+
+    opacity: 0.1;
+
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media (min-width: 992px) { /* Breakpoint 'lg' do Bootstrap */
+    html, body {
+        height: 100%;
+        overflow: hidden; /* Impede rolagem dupla no desktop */
+    }
+    .main-desktop-fixed {
+        height: calc(100vh - 76px - 106px) !important; /* Ajuste fino da altura: 100vh - header - título */
+        overflow: hidden;
+    }
+    .h-lg-100 {
+        height: 100% !important;
+     }
+    .scroll-desktop {
+        overflow-y: auto !important;
+     }
+}
+ @media (max-width: 991.98px) {
+    .main-desktop-fixed {
+        height: auto !important;
+        overflow: visible !important;
+    }
+    .scroll-desktop {
+        overflow-y: visible !important;
+         height: auto !important;
+     }
+    .col-lg-3 {
+         margin-bottom: 1.5rem;
+    }
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    outline: none;
+    box-shadow: none;
+}
+
