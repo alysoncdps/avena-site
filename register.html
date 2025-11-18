@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avena | Cadastro</title>
+
+    <!-- bootstrap -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+     <!-- link do css -->
+     <link rel="stylesheet" href="./style.css">
+
+    <!-- font nunita-bold -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playwrite+DE+SAS:wght@100..400&family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap icons -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+</head>
+<body class="background-primary">
+    <div class="d-flex justify-content-end mb-0 m-4 ">
+        <a class="navbar-brand d-flex  align-items-center" href="#">
+            <img src="./img/logo-avena-removebg-preview.png" alt="avena-logo" class="me-2 navbar-logo-img" width="40" height="40">
+            <span class="fs-4 poppins-bold text-name ">Avena</span>
+        </a>
+    </div>
+
+    <div class="container-fluid p-0 mt-0 mx-5">
+        <div class="row g-0 min-vh-100 ">
+            <div class="col-12 col-sm-5 background-color login-card-custom d-flex flex-column justify-content-center p-4 p-sm-5 m-5">
+                <div class="text-end mt-4">
+                    <a href="#" class="text-decoration-none">
+                        <p class="text-secundary nunita-bold footer-link fs-6">Ajuda?</p>
+                    </a>
+                </div>
+                <h1 class="text-center nunita-bold text-name">Cadastre-se</h1>
+                <p class="text-center text-secundary mb-4">Preencha os espaços com suas informações.</p>
+
+                <form action="./email.html">
+
+                    <div class="mb-3">
+                        <label class="label text-name mx-3" for="">Nome:</label>
+                        <input type="text" placeholder="Maria" class="form-control  text-secundary">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="label text-name mx-3" for="">Sobrenome:</label>
+                        <input type="text" placeholder="Silva" class="form-control text-secundary">
+                    </div>
+
+                    <div class="mb-3 ">
+                        <label class="label text-name mx-3" for="">Data de Nascimento:</label>
+                        <input type="date" placeholder="00/00/0000" class="form-control text-secundary">
+                    </div> 
+
+                    <div class="text-center">
+                            <button type="submit" class="border btn-perfil border-1 button-gradient mt-3 py-0 px-5 rounded-4 w-50 btn-perfiltext-welcome fs-5 
+                            mt-2 pt-1 nunita-bold">
+                                Próximo
+                                <i class="arrow-color bi-arrow-right-circle-fill"></i>                      
+                            </button>
+                    </div>
+                </form>
+
+                <div class="mt-4 text-center form-text">
+                    <p class="nunita-bold">Já possui conta? <a href="./index.html">Entre aqui</a></p>
+                    
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi mt-4 bi-universal-access-circle" viewBox="0 0 16 16">
+                        <path d="M8 4.143A1.071 1.071 0 1 0 8 2a1.071 1.071 0 0 0 0 2.143m-4.668 1.47 3.24.316v2.5l-.323 4.585A.383.383 0 0 0 7 13.14l.826-4.017c.045-.18.301-.18.346 0L9 13.139a.383.383 0 0 0 .752-.125L9.43 8.43v-2.5l3.239-.316a.38.38 0 0 0-.047-.756H3.379a.38.38 0 0 0-.047.756Z"/>
+                        <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0M1 8a7 7 0 1 1 14 0A7 7 0 0 1 1 8"/>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="mx-3 col-12 col-sm-7 login-image-container d-flex flex-column p-4 p-sm-5">
+
+
+                <div class="p-4 p-sm-5 mt-sm-5 text-center">
+                    <h1 class="nunita-bold text-welcome mt-5 mx-5 mb-4 pt-5 text-start">
+                        Faça parte da Avena!
+                    </h1>
+
+                    <p class="nunita-bold text-start mx-5">
+                        Mantenha o progresso sempre visível — <br>dentro e fora do consultório.
+                    </p>
+                </div>
+                
+
+            </div>
+
+            <footer class="d-flex flex-column align-items-center gap-2 my-0">
+                <div class="mt-0 d-flex gap-4">
+                    <a class="footer-link" href="/politica-de-acessibilidade.html">Política de privacidade</a>
+                    <a class="footer-link" href="#">Termo de uso</a>
+                </div>
+
+            </footer>
+        </div>
+    </div> 
+    </body>
+</html>

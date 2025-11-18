@@ -4,143 +4,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Avena | Agenda</title>
-
-     <!-- bootstrap -->
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-
-     <!-- link do css -->
+    <!-- Bootstrap -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" xintegrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Link css -->
      <link rel="stylesheet" href="./style.css">
 
-     <!-- biblioteca de icon -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
-    <!-- biblioteca do bootstrap de icons -->
+     <!-- Bootstrap icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 
-    <!-- font nunita-bold -->
+    <!-- fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playwrite+DE+SAS:wght@100..400&family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
-    
+
 </head>
-<body class="background-primary p-0">
-    <header class="background-color shadow-sm">
+<body class="background-primary p-0 d-flex flex-column">
+
+    <header class="background-color shadow-sm flex-shrink-0">
         <div class="container">
             <nav class="navbar navbar-expand-lg">
-                <a class="navbar-brand d-flex align-items-center" href="#">
+                <a class="navbar-brand d-flex align-items-center me-auto " href="#">
                     <img src="./img/logo-avena-removebg-preview.png" alt="logo-avena" width="40" height="40" class="me-2">
                     <span class="fs-4 poppins-bold text-name">Avena</span>
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+                <button class="navbar-toggler border-0 p-0 ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav mx-auto nunita-bold">
-                    <li class="nav-item">
-                        <a class="nav-link text-name" href="login.html">Início</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Planos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-name" href="#">Biblioteca</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-name" href="#">Relatório</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-name" href="#">Configurações</a>
-                    </li>
+                    <ul class="navbar-nav mx-auto nunita-bold text-center text-lg-start  mt-3 mt-lg-0">
+                        <li class="nav-item mx-2">
+                            <a class="nav-link text-name" href="index.html">Início</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link text-name active" href="#">Equipes</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link text-name" href="#">Configurações</a>
+                        </li>
+                         <li class="nav-item d-lg-none mt-3 border-top pt-3">
+                            <div class="d-flex align-items-center justify-content-center nunita-bold text-name">
+                                <i class="bi bi-person-circle fs-4 me-2"></i>
+                                <span>Dr. Júlia Holanda</span>
+                            </div>
+                        </li>
                     </ul>
                 </div>
 
-                <div class="d-flex align-items-center nunita-bold text-name">
+                <div class="d-none d-lg-flex align-items-center nunita-bold text-name ms-lg-3">
                     <span class="me-2">Dr. Júlia Holanda</span>
                     <i class="bi bi-person-circle fs-3"></i>
-                 </div>
+               </div>
             </nav>
         </div>
     </header>
 
-    <div class="d-flex justify-content-between align-items-center  p-5">
+    <div class="d-flex justify-content-between align-items-center p-5 flex-shrink-0">
         <h1 class="nunita-bold mb-0 " id="nomePlano">Plano semanal para João S.</h1>
-    
-        <button class="btn">
-            <p class="nunita-bold mb-0 button-color p-2 rounded-3 btn-perfil">Salvar plano</p>
-        </button>
     </div>
-
-    <main class="container-fluid px-4">
-        <div class="row g-4 ">
-            <div class="col-lg-3 col-md-4">
-                <div class="bg-white p-3 rounded-4 shadow">
-                    <h4 class="nunita-bold mb-3 text-center">Biblioteca de atividades</h4>
-
-                    <div class="input-group mb-3">
-                        <span class="input-group-text bg-light border-end-0"><i class="bi bi-search"></i></span>
-                        <input type="text" class="form-control bg-light border-start-0 ">
-                    </div>
-
-                    <div class="d-grid mb-3">
-                        <button class="btn btn-outline-primary" type="button" data-bs-toggle="modal" data-bs-target="#modalNovaAtividade">
-                            <i class="bi bi-plus-lg"></i> Criar Nova Atividade
-                        </button>
-                    </div>
-
-                    <div class="biblioteca-scroll pe-2 ">
-                        <div class="card mb-2 border-1 bg-light atividade-card " draggable="true">
-                            <div class="align-items-center d-flex gap-2 card-body p-2">
-                                <i class="bi bi-puzzle fs-4 text-name"></i>
-                                <div>
-                                    <h6 class="mb-0 fw-bold">Treino de foco </h6>
-                                </div>
-                                
-                            </div>
-                        </div> <!--FIM DA BIBILIOTECA -->
-                    </div>
-                    
-                </div>
-            </div>
-
-            <!-- dias -->
-            <div class="col-lg-9 col-md-8">
-                <div class="dias-scroll">
+    <main class="container-fluid px-4 flex-grow-1 main-desktop-fixed">
+        <div class="row g-4 h-lg-100">
+            <div class="col-lg-9 col-md-8 h-lg-100 d-flex flex-column">
+                <div class="dias-scroll flex-grow-1 scroll-desktop pb-3">
                     <div class="dias-flex">
-                                <!-- COMEÇO SEGUNDA -->
+                        
                         <div class="dia-card p-3">
+                            <div class="mb-3">
+                                <h5 class="nunita-bold mb-0">Segunda</h5>
+                                <span class="mx-1 rea badge bg-primary-subtle text-primary-emphasis">10/Nov</span>
+                            </div>
 
-                                <!-- Cabeçalho -->
-                                <div class="mb-3">
-                                    <h5 class="nunita-bold mb-0">Segunda</h5>
-                                    <span class="mx-1 rea badge bg-primary-subtle text-primary-emphasis">10/Nov</span>
-                                </div>
-                                
-                                <!-- Lista de atividades -->
-                                <div class="mb-3 d-flex flex-column gap-1" id="dia-segunda">
-                                </div>
+                            <ul class="mb-3 d-flex flex-column gap-1 list-unstyled" id="dia-segunda"></ul>
 
-                                     <!-- botão de adicionar -->
-                                <div class="text-center">
-                                    <button type="button" class="btn btn-sm btn-outline-primary w-100"
-                                    data-bs-toggle="modal"
-                                    data-bs-target="#modalAdicionarAtividade"
-                                    data-day-target-id="dia-segunda">
-                                        <i class="bi bi-plus"></i> Adicionar
-                                    
-                                    </button>
-                                </div>
-                        </div> <!--FIM DA SEGUNDA-->
+                            <div class="text-center">
+                                <button type="button" class="btn btn-sm btn-outline-primary w-100" data-bs-toggle="modal" data-bs-target="#modalAdicionarAtividade" data-day-target-id="dia-segunda">
+                                    <i class="bi bi-plus"></i> Adicionar
+                                </button>
+                            </div>
+                        </div> 
 
-                                <!--COMEÇO TERÇA-->
                         <div class="dia-card p-3">
                                 <div class="mb-3">
                                     <h5 class="nunita-bold mb-0">Terça</h5>
                                     <span class="mx-1 badge bg-primary-subtle text-primary-emphasis">11/Nov</span>
                                 </div>
 
-                                <div class="mb-3 d-flex flex-column gap-1" id="dia-terca">
-                                </div>
+                                <ul class="mb-3 d-flex flex-column gap-1 list-unstyled" id="dia-terca">
+                                </ul>
 
                                 <div class="text-center">
                                     <button type="button" class="btn btn-sm btn-outline-primary w-100"
@@ -148,20 +101,18 @@
                                     data-bs-target="#modalAdicionarAtividade"
                                     data-day-target-id="dia-terca">
                                         <i class="bi bi-plus"></i> Adicionar
-                                    
                                     </button>
                                 </div>
-                        </div>  <!--FIM TERÇA-->
+                        </div>  
 
-                                <!-- COMEÇO QUARTA -->
-                        <div class="dia-card p-3">
+                         <div class="dia-card p-3">
                                 <div class="mb-3">
                                     <h5 class="nunita-bold mb-0">Quarta</h5>
                                     <span class="mx-1 badge bg-primary-subtle text-primary-emphasis">12/Nov</span>
                                 </div>
 
-                                <div class="mb-3 d-flex flex-column gap-1" id="dia-quarta">
-                                </div>
+                                <ul class="mb-3 d-flex flex-column gap-1 list-unstyled" id="dia-quarta">
+                                </ul>
 
                                 <div class="text-center">
                                     <button type="button" class="btn btn-sm btn-outline-primary w-100"
@@ -169,20 +120,18 @@
                                     data-bs-target="#modalAdicionarAtividade"
                                     data-day-target-id="dia-quarta">
                                         <i class="bi bi-plus"></i> Adicionar
-                                    
                                     </button>
-                            </div>
-                        </div> <!--FIM QUARTA-->
+                                </div>
+                        </div> 
                         
-                                <!-- COMEÇO QUINTA -->
                         <div class="dia-card p-3">
                                 <div class="mb-3">
                                     <h5 class="nunita-bold mb-0">Quinta</h5>
                                     <span class="mx-1 badge bg-primary-subtle text-primary-emphasis">13/Nov</span>
                                 </div>
 
-                                <div class="mb-3 gap-1 flex-column d-flex" id="dia-quinta">
-                                </div>
+                                <ul class="mb-3 gap-1 flex-column d-flex list-unstyled" id="dia-quinta">
+                                </ul>
 
                                 <div class="text-center">
                                     <button type="button" class="btn btn-sm btn-outline-primary w-100"
@@ -190,20 +139,18 @@
                                     data-bs-target="#modalAdicionarAtividade"
                                     data-day-target-id="dia-quinta">
                                         <i class="bi bi-plus"></i> Adicionar
-                                    
                                     </button>
                                 </div>
-                        </div>  <!-- FIM QUINTA -->
+                        </div> 
 
-                          <!-- COMEÇO SEXTA -->
-                        <div class="dia-card p-3">
+                         <div class="dia-card p-3">
                                 <div class="mb-3">
                                     <h5 class="nunita-bold mb-0">Sexta</h5>
                                     <span class="mx-1 badge bg-primary-subtle text-primary-emphasis">14/Nov</span>
                                 </div>
 
-                                <div class="mb-3 d-flex flex-column gap-1" id="dia-sexta">
-                                </div>
+                                <ul class="mb-3 d-flex flex-column gap-1 list-unstyled" id="dia-sexta">
+                                </ul>
 
                                 <div class="text-center">
                                     <button type="button" class="btn btn-sm btn-outline-primary w-100"
@@ -211,20 +158,18 @@
                                     data-bs-target="#modalAdicionarAtividade"
                                     data-day-target-id="dia-sexta">
                                         <i class="bi bi-plus"></i> Adicionar
-                                    
                                     </button>
                                 </div>
-                        </div> <!--FIM SEXTA-->
+                        </div> 
 
-                          <!-- COMEÇO SÁBADO -->
-                        <div class="dia-card p-3">
+                         <div class="dia-card p-3">
                                 <div class="mb-3">
                                     <h5 class="nunita-bold mb-0">Sábado</h5>
                                     <span class="mx- badge bg-primary-subtle text-primary-emphasis">15/Nov</span>
                                 </div>
 
-                                <div class="mb-3 d-flex flex-column gap-1" id="dia-sabado">
-                                </div>
+                                <ul class="mb-3 d-flex flex-column gap-1 list-unstyled" id="dia-sabado">
+                                </ul>
 
                                 <div class="text-center">
                                     <button type="button" class="btn btn-sm btn-outline-primary w-100"
@@ -232,20 +177,18 @@
                                     data-bs-target="#modalAdicionarAtividade"
                                     data-day-target-id="dia-sabado">
                                         <i class="bi bi-plus"></i> Adicionar
-                                    
                                     </button>
                                 </div>
-                        </div> <!-- FIM SÁBADO-->
+                        </div> 
 
-                        <!-- COMEÇO DOMINGO-->
                         <div class="dia-card p-3">
                                 <div class="mb-3">
                                     <h5 class="nunita-bold mb-0">Domingo</h5>
                                     <span class="mx-1 badge bg-primary-subtle text-primary-emphasis">16/Nov</span>
                                 </div>
 
-                                <div class="mb-3 gap-1 flex-column d-flex" id="dia-domingo">
-                                </div>
+                                <ul class="mb-3 gap-1 flex-column d-flex list-unstyled" id="dia-domingo">
+                                </ul>
 
                                 <div class="text-center">
                                     <button type="button" class="btn btn-sm btn-outline-primary w-100"
@@ -253,15 +196,51 @@
                                     data-bs-target="#modalAdicionarAtividade"
                                     data-day-target-id="dia-domingo">
                                         <i class="bi bi-plus"></i> Adicionar
-                                    
                                     </button>
                                 </div>
-                        </div> <!-- FIM DOMINGO-->
+                        </div> 
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 h-lg-100 d-flex flex column">
+                <div class="biblioteca-scroll scroll-desktop pe-2 bg-white p-3 rounded-4 shadow flex-column flex-grow-1 overflow-hidden h-lg-100 text-center">
+                    <i class="bi bi-bell-fill"></i>
+                    <span class="nunita-bold mb-3 flex-shrink-0">NOTIFICAÇÕES</span>
+
+                    <div class="mt-4 mx-5 background-color px-0  rounded-5">
+                        <p class="mx-3">ONTEM</p>
+                    </div>
+
+                    <div class="mb-4 background-primary rounded-4 p-3">
+                        <p>Jogo da Memória realizado com sucesso!</p>
+                    </div>
+
+                    <div class="background-primary rounded-4 p-3">
+                        <p>Sons antes de Dormir não <br>realizado!</p>
+                    </div>
+
+                    <div class="mt-4 mx-5 background-color px-0  rounded-5">
+                        <p class="mx-3">HOJE</p>
+                    </div>
+
+                    <div class="background-primary rounded-4 p-3">
+                        <p>Próximo Exercício: respiração Guiada às 20:00</p>
+                    </div>
+
+                    <div class="btn-perfil rounded-4" style="background-color: #4c9386;">
+                        <a href="#" class="text-decoration-none ">
+                            <div class="mt-5  mx-4 d-flex p-0 ">
+                                <p class="mx-3 mt-2 fs-4 text-white nunita-bold">Ativar Alarmes</p>
+                                <i class="bi fs-2 bi-bell-fill" style="color: #a8dac2;"></i>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </main>
+    
 
 
     <div class="modal fade" id="modalAdicionarAtividade" tabindex="-1" aria-labelledby="modalAdicionarLabel" aria-hidden="true">
@@ -276,8 +255,6 @@
         </div>
     </div>
 
-
-
     <div class="modal fade" id="modalNovaAtividade" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -288,12 +265,10 @@
 
                 <div class="modal-body">
                     <form  id="formNovaAtividade">
-                        <!-- Nome da atividade -->
                         <div class="mb-3">
                             <label for="inputNomeAtividade" class="form-label">Nome da Atividade</label>
                             <input type="text" class="form-control" id="inputNomeAtividade" required>
                         </div>
-                        <!-- Descrição da Atividade -->
                         <div class="mb-3">
                             <label class="form-label" for="inputDescAtividade">Descrição: (Ex: Cognitivo • 15 min)</label>
                             <input type="text" class="form-control" id="inputDescAtividade">
@@ -308,7 +283,7 @@
         </div>
     </div>
 
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
 </html>
